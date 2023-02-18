@@ -24,6 +24,10 @@ android_app_import {
 	},
 	privileged: true,
 	system_ext_specific: true,
+	optional_uses_libs: [
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+	],
 	required: [
         "privapp_whitelist_com.android.updater",
         "default-permissions_com.android.updater"
