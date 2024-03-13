@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2017-2020 The LineageOS Project
+     Copyright (C) 2024 The hentaiOS Project and its Proprietors.
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,7 +16,7 @@
      limitations under the License.
 -->
 <permissions>
-    <privapp-permissions package="com.android.updater">
+    <privapp-permissions package="com.hentai.omaha">
         <permission name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
         <permission name="android.permission.REBOOT"/>
         <permission name="android.permission.RECOVERY"/>

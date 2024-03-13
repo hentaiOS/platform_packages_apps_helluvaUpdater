@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2022 Raphielscape LLC.
+// Copyright (C) 2024 The hentaiOS Project and its Proprietors.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 //
 
 android_app_import {
-	name: "Updater",
+	name: "helluvaUpdater",
 	owner: "hentai",
-	apk: "Updater.apk",
+	apk: "helluvaUpdater.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: true,
@@ -25,24 +25,23 @@ android_app_import {
 	privileged: true,
 	system_ext_specific: true,
 	required: [
-        "privapp_whitelist_com.android.updater",
-        "default-permissions_com.android.updater"
+        "com.hentai.omaha",
+        "default-permissions_helluvaUpdater"
     ],
 }
 
 prebuilt_etc {
-    name: "privapp_whitelist_com.android.updater",
+    name: "com.hentai.omaha",
     system_ext_specific: true,
     sub_dir: "permissions",
-    src: "privapp_whitelist_com.android.updater.xml",
+    src: "com.hentai.omaha.xml",
     filename_from_src: true,
 }
 
 prebuilt_etc {
-    name: "default-permissions_com.android.updater",
+    name: "default-permissions_helluvaUpdater",
     system_ext_specific: true,
     sub_dir: "default-permissions",
-    src: "default-permissions_com.android.updater.xml",
+    src: "default-permissions_helluvaUpdater.xml",
     filename_from_src: true,
 }
-
