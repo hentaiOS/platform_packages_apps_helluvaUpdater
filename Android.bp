@@ -25,13 +25,22 @@ android_app_import {
 	privileged: true,
 	system_ext_specific: true,
 	required: [
-        "com.hentai.omaha",
+        "com.hentai.omaha.preferences",
+        "com.hentai.omaha.permissions",
         "default-permissions_helluvaUpdater"
     ],
 }
 
 prebuilt_etc {
-    name: "com.hentai.omaha",
+    name: "com.hentai.omaha.preferences",
+    system_ext_specific: true,
+    sub_dir: "preferred-apps",
+    src: "helluva_updater.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "com.hentai.omaha.permissions",
     system_ext_specific: true,
     sub_dir: "permissions",
     src: "com.hentai.omaha.xml",
